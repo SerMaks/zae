@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Макет</title>
+	<link rel="stylesheet" type="text/css" href="Товар.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/e8e1762abb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header class = "header">
+
+	<div class = "container"> 
+	<nav>
+	
+	<div class="search-box">
+  <form action="#">
+    <input type="text" placeholder="Поиск по номеру детали" name="search">
+    <button type="submit">Найти</button>
+  </form>
+  </div>
+  <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-2x" ></i></button>
+	<div id="myDropdown" class="dropdown-content">
+    <a href="Каталог.html">Жидкости</a>
+    <a href="#about">Расходники</a>
+    <a href="#contact">Автохимия</a>
+    <a href="#contact">Датчики и электрика</a>
+    <a href="#contact">АКПП</a>
+    <a href="#contact">CVT</a>
+    <a href="#contact">РКПП</a>
+    <a href="#contact">Контрактные</a>
+	</div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtЗначение = a[i].textСодержание || a[i].innerText;
+    if (txtЗначение.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+</script>
+		<div class = "header_innerr">
+			<h6 class = "header_title">Новосибирск ул. Гурьевская 175  </h6>
+				<nav class = "nav">
+					<a  class = "nav_link" href = "#">Войти</a>
+				</nav>
+		</div>
+				
+		<div class = "header_inner">
+			<div class = "logo">
+				<img src ="images/logo.png" width="90" height="70"  />
+			</div>
+				<nav class = "navv">
+					<a  class = "nav_linkk" href = "#"><i class="fa fa-shopping-cart" ></i> Корзина  </a>
+				</nav>
+
+		</div>
+
+		</nav>
+
+</div>
+</header>
+<div class ="intro">
+</div>
+	<div class ="liniya">
+	</div>
+	<section class = "section"> 
+	
+		<div class = "conteiner"> 
+		<form class="search-boxx">
+
+					<button type="submit" class = "box"><i class="fa fa-shopping-cart " ></i></button>
+				</form>
+			<div class = "section_header">
+				<h1>Moly Green Protect SN/GF-5 5W40</h1>
+			
+				<h1 class = "header_titlee" >3000 Р</h1>
+				
+			</div>
+			<div class = "header_innerrr">
+					<h3 class "header_titleee">Код товара: KE900-90042</h3>
+					<div class = "tovar">
+				<img src ="images/tovar.jpg" width="350" height="250"  />
+			</div>
+		<table >
+
+  <tr>
+ 
+    <td width="40">
+		</td>
+	<td width="150">
+		<nav class = "tablica">
+			<a  class = "table_footer"> Наличие товара </a></nav>
+	</td>		
+	<td width="220">
+		<nav class = "tablicaa">
+			<a  class = "table_footerr">В наличии</a></nav>
+	</td>
+  </tr>
+
+  <tr>
+    <td></td>
+	<td>
+		<nav class = "tablica">
+			<a  class = "table_footer"> Наличие товара </a></nav>
+	</td>
+	<td>
+		<nav class = "tablicaa">
+			<a  class = "table_footerr">В наличии</a></nav></td>
+   </tr>
+   
+  <tr>
+    <td></td>
+	<td>
+		<nav class = "tablica">
+			<a  class = "table_footer"> Наличие товара </a></nav>
+	</td>
+	<td>
+		<nav class = "tablicaa">
+			<a  class = "table_footerr">В наличии</a></nav></td>
+   </tr>
+  
+ <tr>
+    <td></td>
+	<td>
+		<nav class = "tablica">
+			<a  class = "table_footer"> Наличие товара </a></nav>
+	</td>
+	<td>
+		<nav class = "tablicaa">
+			<a  class = "table_footerr">В наличии</a></nav></td>
+   </tr>
+   <tr>
+    <td></td>
+	<td>
+		<nav class = "tablica">
+			<a  class = "table_footer"> Наличие товара </a></nav>
+	</td>
+	<td>
+		<nav class = "tablicaa">
+			<a  class = "table_footerr">В наличии</a></nav></td>
+   </tr>
+   <tr>
+    <td></td>
+	<td>
+		<nav class = "tablica">
+			<a  class = "table_footer"> Наличие товара </a></nav>
+	</td>
+	<td>
+		<nav class = "tablicaa">
+			<a  class = "table_footerr">В наличии</a></nav></td>
+   </tr>
+   <tr>
+    <td></td>
+	<td>
+		<nav class = "tablica">
+			<a  class = "table_footer"> Наличие товара </a></nav>
+	</td>
+	<td>
+		<nav class = "tablicaa">
+			<a  class = "table_footerr">В наличии</a></nav></td>
+   </tr>
+  
+</table>
+
+		<h2 >Характеристики</h2>
+		<div class "text">
+			<p>Moly Green PROTECT SN/GF-5 5W40. Synthetic oil/VHVI Group-3 PAO Blended. Отвечает новейшему стандарту моторных масел "SN" 		для бензиновых двигателей. Также рекомендовано для Европейских легковых автомобилей.  Продукт имеет допуски/соответствует 		спецификациям: API SN/CF LSAC GF5 ACEA A3/B4</p>
+		</div>
+		</div>
+		
+  </div>
+  
+	</section>
+	<section class = "map">
+		<div class = "maps"> 
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A16daa03906c2f3823166b792b83cade791ec107723fd23d26a469cd003d81720&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+		</div>
+	</section>
+
+	<footer class = "footer">
+		<div class = "footer_inner"> 
+		<div class = "footer_down">
+
+		<table>
+  <tr>
+    
+    <th>Товары</th>
+     <th></th>
+     <th>Контакты</th>
+   
+
+  </tr>
+  <tr>
+ 
+    <td width="400">
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "Каталог.html"> Жидкости  </a>
+		</nav></td>
+	<td width="380">
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> АКПП  </a>
+		</nav></td>
+				<td width="220"   align = "justify">Адрес:  г. Новосибирск,  ул. Гурьевская 175</td>
+  </tr>
+
+  <tr>
+    <td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> Расходники  </a>
+		</nav></td>
+	<td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> CVT</a>
+		</nav></td>
+	<td align ="justify" >Телефон:  +7 (951) 388-82-17</td>
+   </tr>
+   
+   <tr>
+	<td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> Автохимия  </a>
+		</nav></td>
+	<td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> РКПП  </a>
+		</nav></td>
+		<td align ="justify" >Адрес электронной почты: van-parts@mail.ru</td>
+  </tr>
+  
+  <tr>
+   <td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> Датчики и электрика  </a>
+		</nav></td>
+	<td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> Контрактные  </a>
+		</nav></td>
+		<td align ="justify" > <nav class = "navvv">
+			<a  class = "nav_footer" href = "#">  instagram.com/automagazin_van  </a>
+		</nav></td>
+  </tr>
+  
+</table>
+		</div>
+
+  </div>
+	</section>
+	
