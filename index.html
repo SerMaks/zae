@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Макет</title>
+	<link rel="stylesheet" type="text/css" href="Макет.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/e8e1762abb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header class = "header">
+
+	<div class = "container"> 
+	<nav>
+	
+	<div class="search-box">
+  <form action="#">
+    <input type="text" placeholder="Поиск по номеру детали" name="search">
+    <button type="submit">Найти</button>
+  </form>
+  </div>
+  <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars fa-2x" ></i></button>
+	<div id="myDropdown" class="dropdown-content">
+    <a href="Каталог.html">Жидкости</a>
+    <a href="#about">Расходники</a>
+    <a href="#contact">Автохимия</a>
+    <a href="#contact">Датчики и электрика</a>
+    <a href="#contact">АКПП</a>
+    <a href="#contact">CVT</a>
+    <a href="#contact">РКПП</a>
+    <a href="#contact">Контрактные</a>
+	</div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtЗначение = a[i].textСодержание || a[i].innerText;
+    if (txtЗначение.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+</script>
+		<div class = "header_innerr">
+			<h6 class = "header_title">Новосибирск ул. Гурьевская 175  </h6>
+				<nav class = "nav">
+					<a  class = "nav_link" href = "#">Войти</a>
+				</nav>
+		</div>
+				
+		<div class = "header_inner">
+			<div class = "logo">
+				<img src ="images/logo.png" width="90" height="70"  />
+			</div>
+				<nav class = "navv">
+					<a  class = "nav_linkk" href = "#"><i class="fa fa-shopping-cart" ></i> Корзина  </a>
+				</nav>
+
+		</div>
+
+		</nav>
+
+</div>
+</header>
+<div class ="intro">
+</div>
+	<div class ="liniya">
+	</div>
+	<section class = "section"> 
+	
+		<div class = "conteiner"> 
+			<div class = "section_header">
+				<h1 align="center">АВТОЗАПЧАСТИ И РАСХОДНИКИ</h1>
+				<h4 align="center">Заказывать автозапчасти проще, чем вы думаете</h4>	
+					<div class = "car">
+						<img src ="images/logotip.jpg"  width="1000" height="600" />
+					</div>
+						<h2 align="center">Онлайн подбор автозапчастей</h2>
+			</div>
+			
+	
+		
+        <select class ="formi">
+          <option value>Марка авто</option>
+          <option value>Toyota</option>
+          <option value>Nissan</option>
+          <option value>Honda</option>
+          <option value>BMW</option>
+          <option value>Audi</option>
+          <option value>Suzuki</option>
+          <option value>Subaru</option>
+          <option value>Mazda</option>
+          <option value>Mercedec</option>
+          <option value>Mitsubishi</option>
+          <option value>Skoda</option>
+        </select>
+		<select class ="formis" >
+          <option value>Модель авто</option>
+          <option value>CAMRY</option>
+          <option value>COROLLA</option>
+          <option value>LAND CRUISER</option>
+          <option value>GT-R</option>
+          <option value>PATROL</option>
+          <option value>JUKE</option>
+          <option value>X-TRAIL</option>
+          
+        </select>
+		<form class "poisk">
+ <input type="text"  placeholder="Название запчасти или номер" class="signup-text-input" />
+</form>
+		<select class ="formiss" >
+          <option value>Год выпуска</option>
+          <option value>1997</option>
+          <option value>1998</option>
+          <option value>1999</option>
+          <option value>2000</option>
+          <option value>2001</option>
+          <option value>2002</option>
+          <option value>2003</option>
+          <option value>2004</option>
+          <option value>2005</option>
+          <option value>2006</option>
+          <option value>2007</option>
+          <option value>2008</option>
+          <option value>2009</option>
+          <option value>2010</option>
+          <option value>2011</option>
+          <option value>2012</option>
+          <option value>2013</option>
+          <option value>2014</option>
+          <option value>2015</option>
+       </select>
+          
+		
+		<form class="search-boxx">
+ 
+    <button type="submit" class = "box">Найти</button>
+  </form>
+    <div class ="liniyaa">
+
+	</div>
+	
+  </div>
+
+  
+	</section>
+	
+	<section class = "section2">
+		<div class = "conteinerr"> 
+		<h1 align = "center"> НАШИ ТОВАРЫ И АВТОЗАПЧАСТИ</h1>
+			<div class = "section_down">
+
+			<nav class = "navv">
+					<a  class = "nav_linkk" href = "#"><i class="fa fa-tint fa-4x fa-fw "></i> </br>Жидкости  </a>
+				</nav>
+
+			<nav class = "navv">
+					<a  class = "nav_linkk" href = "#"><i class="fa fa-cog fa-4x" ></i> </br>Расходники  </a>
+				</nav>
+				<nav class = "navv">
+					<a  class = "nav_linkk" href = "#"><i class="fas fa-flask fa-4x"></i> </br>Автохимия  </a>
+				</nav>
+				<nav class = "navv">
+					<a  class = "nav_linkk" href = "#"><i class="fas fa-tachometer-alt fa-4x"></i> </br>Датчики и </br> электрика </a>
+				</nav>
+				<nav class = "navv">
+					<a  class = "nav_linkk" href = "#"><i class="fas fa-car-battery fa-4x"></i>  </br>Аккумуляторы  </a>
+				</nav>
+			
+		
+			</div>
+		
+		</div>
+		
+	</section>
+	
+	<section class = "map">
+		<div class = "maps"> 
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2338587e09d24f77aaa9cf137e174f387bc451353c0de80311d69532e279c32e&amp;width=1000&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+		</div>
+	</section>
+
+	<footer class = "footer">
+		<div class = "footer_inner"> 
+		<div class = "footer_down">
+
+		<table>
+  <tr>
+    
+    <th>Товары</th>
+     <th></th>
+     <th>Контакты</th>
+   
+
+  </tr>
+  <tr>
+ 
+    <td width="400">
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "Каталог.html"> Жидкости  </a>
+		</nav></td>
+	<td width="380">
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> АКПП  </a>
+		</nav></td>
+				<td width="220"   align = "justify">Адрес:  г. Новосибирск,  ул. Гурьевская 175</td>
+  </tr>
+
+  <tr>
+    <td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> Расходники  </a>
+		</nav></td>
+	<td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> CVT</a>
+		</nav></td>
+	<td align ="justify" >Телефон:  +7 (951) 388-82-17</td>
+   </tr>
+   
+   <tr>
+	<td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> Автохимия  </a>
+		</nav></td>
+	<td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> РКПП  </a>
+		</nav></td>
+		<td align ="justify" >Адрес электронной почты: van-parts@mail.ru</td>
+  </tr>
+  
+  <tr>
+   <td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> Датчики и электрика  </a>
+		</nav></td>
+	<td>
+		<nav class = "navvv">
+			<a  class = "nav_footer" href = "#"> Контрактные  </a>
+		</nav></td>
+		<td align ="justify" > <nav class = "navvv">
+			<a  class = "nav_footer" href = "#">  instagram.com/automagazin_van  </a>
+		</nav></td>
+  </tr>
+  
+</table>
+		</div>
+
+  </div>
+	</section>
+			
+</body>
+</html>
